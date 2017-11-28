@@ -1,0 +1,25 @@
+banner:
+    charset: UTF-8 # Banner file encoding.
+    location: classpath:banner.txt # Banner file location.
+    
+server:
+    error:
+        whitelabel:
+          enabled: true # Enable the default error page displayed in browsers in case of a server error.
+
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.99.100:3306/sampledb?autoReconnect=true&useSSL=false
+    username: root
+    password: my-secret-pw
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update 
+      naming:
+        strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+  thymeleaf:
+    cache: false # Enable template caching.

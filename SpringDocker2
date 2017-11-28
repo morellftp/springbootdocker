@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1"/>
+<title>403</title>
+</head>
+<body>
+
+</body>
+</html>FROM java:8
+EXPOSE 8080
+ADD /target/SpringDocker.war SpringDocker.war
+ENTRYPOINT ["java","-jar","SpringDocker.war"]

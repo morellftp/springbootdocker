@@ -1,0 +1,4 @@
+com\udemy\backendninja\entity\QUser.class
+com\udemy\backendninja\entity\QUserRole.class
+com\udemy\backendninja\entity\QLog.class
+com\udemy\backendninja\entity\QContact.class
